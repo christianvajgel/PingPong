@@ -17,18 +17,12 @@ All Rights Reserved.
 
 package br.edu.infnet.pingpong;
 
-//import android.widget.BaseAdapter;
-//import java.util.List;
-
 public class FirebaseDAO {
 
     private String SiteLink;
 
     public FirebaseDAO() {
     }
-
-//	public FirebaseDAO(BaseAdapter mAdapter, List<Site> mSites) {
-//    }
 
     public String getSiteLink() {
         return SiteLink;

@@ -20,16 +20,13 @@ package br.edu.infnet.pingpong;
 import java.io.Serializable;
 
 public class Site implements Serializable {
-    public Site() {
-    }
 
-//    public Site (String siteNome, String siteStatus){
-//        this.siteNome = siteNome;
-//        this.siteStatus = siteStatus;
-//    }
     String siteNome;
     String siteStatus;
     boolean online;
+
+    public Site() {
+    }
 
     public String getSiteNome() {
         return siteNome;

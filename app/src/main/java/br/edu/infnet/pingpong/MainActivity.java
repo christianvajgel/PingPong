@@ -17,7 +17,6 @@ All Rights Reserved.
 
 package br.edu.infnet.pingpong;
 
-//import android.content.Context;
 import android.os.Handler;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
@@ -26,7 +25,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-//import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -56,15 +54,11 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase bancoDados;
     DatabaseReference referencia;
     private ListView mListaFavoritosSites;
-//    private List mListFavoritos;
     private ArrayList<String> arrayListSites;
-//    private ArrayAdapter<String> adapterSites;
     private TextView mTextViewStatus;
     String urlFirebase;
     private List<Site> mSites;
     private SiteAdapter mAdapter;
-//    private Context contexto;
-//    private FirebaseDAO mFirebaseDAO;
     int position = 0;
 
     @Override
@@ -81,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
         arrayListSites = new ArrayList<>();
         mSites = new ArrayList<>();
         mAdapter = new SiteAdapter(this, mSites);
-//        mFirebaseDAO = new FirebaseDAO(mAdapter, mSites);
         carregarListaFirebase();
         mListaFavoritosSites.setAdapter(mAdapter);
         mHandler = new Handler();
@@ -264,79 +257,4 @@ public class MainActivity extends AppCompatActivity {
             verificacaoLista();
         }
     };
-
-//    public final class SynchronousGet {
-//        Site siteLista = mAdapter.getItem(position);
-//        String url = siteLista.getSiteNome();
-//        private final OkHttpClient client = new OkHttpClient();
-//
-//        public void run() throws Exception {
-//            Request request = new Request.Builder().url("http://" + url).build();
-//            try (Response response = client.newCall(request).execute()) {
-//                if (response.isSuccessful()) {
-//                    MainActivity.this.runOnUiThread(new Runnable() {
-//                        @Override
-//                        public void run() {
-//                            mSites.get(position).setOnlineStatus(true);
-//                            mAdapter.notifyDataSetChanged();
-//                        }
-//                    });
-//                } else {
-//                    MainActivity.this.runOnUiThread(new Runnable() {
-//                        @Override
-//                        public void run() {
-//                            mSites.get(position).setOnlineStatus(false);
-//                            mAdapter.notifyDataSetChanged();
-//                        }
-//                    });
-//                }
-//            }
-//        }
-//    }
-
-//    public void pingServidor(){
-//        final Site siteLista = mAdapter.getItem(position);
-//        String url = siteLista.getSiteNome();
-//        OkHttpClient client = new OkHttpClient();
-//
-//        try {
-//            final Request request = new Request.Builder().url("http://" + url).build();
-//            client.newCall(request).enqueue(new Callback() {
-//                @Override
-//                public void onResponse(Call call, final Response response) throws IOException {
-//                    if (response.isSuccessful()) {
-//                        MainActivity.this.runOnUiThread(new Runnable() {
-//                            @Override
-//                            public void run() {
-//                                mSites.get(position).setOnlineStatus(true);
-//                                mAdapter.setSiteStatus(position, true);
-//                                mAdapter.notifyDataSetChanged();
-//                            }
-//                        });
-//                    } else {
-//                        MainActivity.this.runOnUiThread(new Runnable() {
-//                            @Override
-//                            public void run() {
-//                                mSites.get(position).setOnlineStatus(false);
-//                                mAdapter.notifyDataSetChanged();
-//                                mAdapter.setSiteStatus(position, false);
-//                            }
-//                        });
-//                    }
-//                }
-//                @Override
-//                public void onFailure(Call call, IOException e) {
-//                    mHandler.post(new Runnable() {
-//                        @Override
-//                        public void run() {
-//                            websiteOffline();
-//                        }
-//                    });
-//                    e.printStackTrace();
-//                }
-//            });
-//        } catch (Exception e) {
-//            Toast.makeText(getApplicationContext(),"Exception: " + e.getMessage(), Toast.LENGTH_SHORT).show();
-//        }
-//    }
 }
