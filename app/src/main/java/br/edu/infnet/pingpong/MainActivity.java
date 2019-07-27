@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             };
             new Timer().scheduleAtFixedRate(timer, 5000,10000);
             // O 'delay (5000)' e/ou 'period (10000)' pode(m) ser(em) escolhido(s) em (milissegundos)
-           // dependendo da velocidade da conexão com a internet.
+           // dependendo da velocidade da conexão.
     }
 
     public void threadVerificacao(){
