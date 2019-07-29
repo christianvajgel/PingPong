@@ -13,7 +13,7 @@
 
 :raising_hand_man: Christian Vajgel <br/>
 :e-mail: [E-mail](mailto:christian.vajgel@al.infnet.edu.br) <br/>
-:globe_with_meridians: [LinkedIn](linkedin.com/in/christianvajgel/) <br/>
+:globe_with_meridians: [LinkedIn](https://linkedin.com/in/christianvajgel/) <br/>
 
 :link: [Google Play (Android 6.0+)](https://play.google.com/store/apps/details?id=br.edu.infnet.pingpong)<br/>
 
