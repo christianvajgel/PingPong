@@ -107,7 +107,7 @@ cores Verde (on-line) ou Vermelha (off-line) que referenciam o estado atual de c
 * Layout da lista começou a parecer com o final.
 * A cor vermelha foi escolhida de forma aleatória, ninguém enxergaria com branco.
 * Os círculos foram reduzidos de tamanho seguindo influências de minimalismo.
-* A fonte foi definida `Roboto`, fonte criada pela [Google](https://fonts.google.com/specimen/Roboto) (Christian Robertson) e tendo por objetivo manter o estilo do sistema operacional e sua conexão com o Material Design e minimalismo. 
+* A fonte foi definida `Roboto`, fonte criada pelo [Google](https://fonts.google.com/specimen/Roboto) (Christian Robertson) e tendo por objetivo manter o estilo do sistema operacional e sua conexão com o Material Design e minimalismo. 
 * O botão `Atualizar` foi substituído pelo `Adicionar` e realmente desta vez fazia alguma coisa, ele checava o site antes de adicionar e adicionava apenas se existisse, independente de estar on-line ou off-line.
 * Caracteres e links inválidos não eram mais aceitos.
 * Integração com Firebase apresentou problemas, a lista era carregada mas não iniciava a atualização dela. <br/>
